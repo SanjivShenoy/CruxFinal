@@ -49,5 +49,4 @@ def result():
     repo = soup.find_all('div', class_='d-inline-block mb-1')
 
     repo2 = soup.find_all('div', id='readme')
-    # print(repo.h3.a.text)
     return render_template('result.html', repo=repo, repo2=repo2)
