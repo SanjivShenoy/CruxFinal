@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Result</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='bootstrapcss/bootstrap.min.css')}}">
+    </head>
+    <body>
+        <ul>
+            {% for i in repo %}
+            <li>{{i.h3.a.text}}</li>
+            {% endfor %}
+        </ul>
+
+        <ol>
+            {% for j in repo2 %}
+            <li>{{j.text}}</li>
+            {% endfor %}
+        </ol>
+
+    </body>
+</html>

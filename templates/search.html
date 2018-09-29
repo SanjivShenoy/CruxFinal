@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Search</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='bootstrapcss/bootstrap.min.css')}}">
+    </head>
+    <body>
+        <h1 style="margin:30px;">Enter Github url:</h1>
+
+        <form action="{{url_for('result')}}" method="post" style="margin:30px">
+            <input type="text" name="search" placeholder="org or repository url">
+        </form>
+
+    </body>
+</html>
