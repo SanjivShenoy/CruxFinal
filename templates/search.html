@@ -4,13 +4,17 @@
         <meta charset="utf-8">
         <title>Search</title>
         <link rel="stylesheet" href="{{url_for('static', filename='bootstrapcss/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/search.css')}}">
     </head>
     <body>
         <h1 style="margin:30px;">Enter Github url:</h1>
 
+
         <form action="{{url_for('result')}}" method="post" style="margin:30px">
-            <input type="text" name="search" placeholder="org or repository url">
+            <input type="text" class="shadow p-3 mb-5 bg-white rounded" name="search" placeholder="org or repository url">
+            <button >Search</button>
         </form>
+
 
     </body>
 </html>

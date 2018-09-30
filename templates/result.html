@@ -4,8 +4,17 @@
         <meta charset="utf-8">
         <title>Result</title>
         <link rel="stylesheet" href="{{url_for('static', filename='bootstrapcss/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/result.css')}}">
     </head>
     <body>
+            {% if repo != [] %}
+            <h1 style="margin-left: 30px;">Repositories List</h1>
+            {% endif %}
+
+            {% if repo2 != [] %}
+            <h1 style="margin-left: 30px; text-align:center;">Read Me Info!</h1>
+            {% endif %}
+
         <ul>
             {% for i in repo %}
             <li>{{i.h3.a.text}}</li>
